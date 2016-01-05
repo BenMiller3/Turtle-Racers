@@ -1,9 +1,12 @@
+#import files
 from turtle import *            
 import random
 import time
 import pygame
 
+#gameplay definition
 def race():
+    #penstrokes
     reset()
     clear()
     hideturtle()
@@ -35,11 +38,15 @@ def race():
     goto(85,0)
     clear()
     race = True
+    
+    #sets the temporary variables all to 0
     a = 0
     b = 0
     c = 0
     d = 0
     e = 0
+    
+    #while the game is running
     while(race == True):
 
         v = random.random()*11
@@ -68,6 +75,7 @@ def race():
     fourth = ""
     fifth = ""
 
+    #Checks which turtle has won the race
     if(winners[4] == a):
         first = "1. Red"
     elif(winners[4] == b):
@@ -133,6 +141,8 @@ def race():
         fifth = "5. Orange"
     else:
         fifth = "ERROR"
+        
+    #Plays the background music
     fin = pygame.mixer.Sound('app.wav')
     pygame.mixer.Sound.play(fin)
     hideturtle()
@@ -166,6 +176,7 @@ def race():
     goto(-500,-160)
     write("Press Spacebar to race again", move=False, align="left", font=("Arial", 30, "bold"))
 
+#Definition to begin the game again
 def reset():
     tut1.up()                  
     tut2.up()
