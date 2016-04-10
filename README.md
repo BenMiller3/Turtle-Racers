@@ -1,4 +1,4 @@
-## Turtle-Racers
+# Turtle-Racers
 Game made in 2014 with pygame. Gamble on different racing turtles! Music and full animation done in python with pygame.
 
 ![Alt Screenshot](https://github.com/BenMiller3/Turtle-Racers/blob/master/ScreenShot.png)
