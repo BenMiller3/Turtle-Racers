@@ -1,0 +1,20 @@
+canvas {
+    text-align: center;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+
+/*
+html, body {
+    height: 100%;
+}
+  
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+*/
